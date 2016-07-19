@@ -1,7 +1,7 @@
 # Leetcode-solutions
 thoughts and solutions to Leetcode problems
 
-#Reverse Integer
+#Reverse Integer & Palindrome Number
 Firstly convert Integer to String: s=str(i)
 Then use Python inbulit method to reverse a string: [::-1]
 Then conver String to Integer: i=int(s)
