@@ -35,4 +35,6 @@ The second step is to reverse the list l and delete element from the start: l=[:
 
 The last step is to reconstruct a linked list according to the list value. Note that the initialization of a ListNode is ln=ListNode(value). The most important thing of this step is that, the fist node to put into the LinkedList will become the last element to read, as one can only assign the current value to a node, and the previews linkedlist will be assigned as the next to the current node.
 
-
+#Valid Parentheses
+determine whether a input string has valid parentheses, (){}[] can be adjacent or nested such as [{}]()
+Then can use python inbuilt method str.replace('()','') to remove all adjacent pair of (){}[], until the orginal string contains no more (){}[] pair. Then if the remaining string is empty, the input is valid
