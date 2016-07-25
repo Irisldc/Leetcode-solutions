@@ -29,7 +29,7 @@ Note that we should consider the empty list situation, to check if a list is emp
 the input type was defined as a linked list, where 1->2->3->4
 each element in the linked list is a ListNode, the ListNode class has two operations, node.val returns the value of the current node, and node.next returns the linkedlist after the current node
 
-The first thing to do is to assign each node value of a linkedlist to a normal list: l=[]. To traverse a linked list, the node.next and node.val function should be used: while current_node!=Node then l.append(current_node.val) and current_node=linked_list.next
+The first thing to do is to assign each node value of a linkedlist to a normal list: l=[]. To traverse a linked list, the node.next and node.val function should be used: while current_node != None then l.append(current_node.val) and current_node=linked_list.next
 
 The second step is to reverse the list l and delete element from the start: l=[::-1], l=[:n-1]+l[n:]
 
