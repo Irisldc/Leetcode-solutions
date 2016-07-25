@@ -18,13 +18,18 @@ class Solution(object):
             while head != None:
                 l.append(head.val)
                 head=head.next
-        
+        #reverse a list
         l=l[::-1]
+        #delete the nth element from the begining
         l=l[:n-1]+l[n:]
-        ls=None
+        #define a linkedlist to store the previews linkedlist
+        previews_ls=None
         for i in l:
+            #initialize a new ListNode
             new_node = ListNode(i)
-            new_node.next = ls
-            ls = new_node
+            #assign previews linkedlist to the next of the current node
+            new_node.next = previews_ls
+            #update the previews linkedlist
+            previews_ls = new_node
          
         return ls   
