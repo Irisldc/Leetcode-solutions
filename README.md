@@ -38,3 +38,10 @@ The last step is to reconstruct a linked list according to the list value. Note 
 #Valid Parentheses
 determine whether a input string has valid parentheses, (){}[] can be adjacent or nested such as [{}]()
 Then can use python inbuilt method str.replace('()','') to remove all adjacent pair of (){}[], until the orginal string contains no more (){}[] pair. Then if the remaining string is empty, the input is valid
+
+#implement strStr() function
+strStr(str1, str2) function determine whether str2 is a substring of str1, if yes, the function returns the first index of str2, if not, returns -1
+My thought is to firstly convert the string of str1 into a dictionary, use the position as key and character as value, since the search of dic is n times faster than a list.
+I used if str2 in str1 to determine whether str2 is in str1, if not, returns -1
+Then I loop from the string str1 to find each substring the same length as str2, if there is a substring aquals to str2, return the index of the key.
+Note that if str2 is empty, 0 should be returned.
